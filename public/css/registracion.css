@@ -1,0 +1,386 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+  margin: 0%;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+/* HEADER */
+
+.contenedor-logo-busqueda {
+  display: flex;
+  background-color: #eac926;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Logo-contenedor {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.LOGO {
+  display: block;
+}
+.logo-busqueda-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.buscador {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  margin-left: 7%;
+}
+.boton-buscar {
+  background-color: #fff;
+}
+.ico-y-cuotas {
+  margin: 3vw;
+}
+
+.fa-search {
+  color: #666;
+  background-color: whie;
+}
+
+.nav-header {
+  display: none;
+}
+li {
+  list-style: none;
+}
+
+/* BURGER MENU */
+.burger-menu {
+  display: grid;
+  background-color: #0044aa;
+  color: white;
+  text-align: center;
+  width: 30px;
+  margin-top: 10px;
+  height: 30px;
+  padding: auto;
+  margin: auto;
+  border-radius: 8px;
+  align-items: center;
+}
+.fa-bars {
+  justify-content: center;
+  text-align: center;
+  background-color: #0044aa;
+}
+
+/* GENERAL */
+
+h2 {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 10px;
+  font-weight: 300;
+}
+
+img {
+  width: 90%;
+  text-align: center;
+}
+
+/* main */
+
+.form-complete {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+
+form div {
+  margin: 15px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  background-color: #edeef0;
+  color: #666;
+  border-radius: 5px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+}
+
+.form-button button {
+  background-color: #0044aa;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  width: 100%;
+}
+
+.register-title {
+  color: #0044aa;
+  font-size: 24px;
+  text-align: center;
+}
+
+input:invalid {
+  border: 2px solid gray;
+}
+
+@media (min-width: 361px) {
+  .form-box input {
+    max-width: 225px;
+    margin: auto;
+  }
+
+  .form-button button {
+    max-width: 225px;
+    margin: auto;
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+footer section {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+}
+.ico-footer {
+  margin-bottom: 3px;
+  margin-top: 15px;
+  width: 2em;
+  font-size: 25px;
+  color: #1259c3;
+}
+.contenedor-footer-ico {
+  display: flex;
+  justify-content: center;
+}
+
+footer h3 {
+  margin-bottom: 1px;
+  color: #666;
+  margin-top: 5px;
+}
+footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer h2 {
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+  color: #666;
+}
+
+/*Queries*/
+
+/* TABLET */
+@media (min-width: 481px) {
+  /* HEADER */
+  header {
+    background-color: #eac926;
+  }
+  section.contenedor-logo-busqueda {
+    flex-wrap: nowrap;
+  }
+  .logo-busqueda-box {
+    display: flex;
+    width: 125%;
+    justify-content: center;
+    margin-right: 0%;
+  }
+  .Logo-contenedor {
+    width: 50%;
+    margin-left: -10px;
+  }
+  .LOGO {
+    display: block;
+    width: 100%;
+    min-width: 135px;
+    margin-right: 7%;
+  }
+  .search {
+    width: 80%;
+  }
+  .buscador {
+    width: 47%;
+    height: 2.5vh;
+    min-width: 130px;
+    min-height: 3.5vh;
+    margin-left: 0;
+  }
+  .boton-buscar {
+    background-color: #03264c;
+  }
+  .fa-search {
+    color: white;
+    background-color: #03264c;
+  }
+  .ico-y-cuotas {
+    width: 60%;
+    font-size: 1.4vw;
+  }
+  .fa-hand-holding-usd {
+    display: inline-block;
+  }
+
+  /*NAV*/
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+  .nav-left {
+    display: flex;
+    width: 45%;
+    padding: 0;
+    margin-right: 1vw;
+    justify-content: space-around;
+  }
+  .nav-right {
+    display: flex;
+    width: 50%;
+    padding: 0px;
+    margin-left: 1vw;
+    justify-content: space-around;
+  }
+  .fa-id-card,
+  .fa-sign-in-alt,
+  .fa-shopping-cart {
+    margin-right: 4px;
+  }
+
+  /*HAMBURGUESA*/
+  .burger-menu {
+    display: none;
+  }
+}
+
+/* LAPTOP */
+@media (min-width: 769px) {
+  /* HEADER */
+  .Logo-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .LOGO {
+    width: 70%;
+    min-width: 135px;
+    margin-right: 7%;
+  }
+  .search {
+    width: 80%;
+  }
+  .ico-y-cuotas {
+    width: 45%;
+    font-size: 0.9vw;
+  }
+
+  /*NAV*/
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+  .nav-left {
+    display: flex;
+    width: 40%;
+    margin-right: 1vw;
+    justify-content: space-around;
+  }
+  .nav-right {
+    display: flex;
+    width: 45%;
+    margin-left: 1vw;
+    justify-content: space-around;
+  }
+
+  .fa-id-card,
+  .fa-sign-in-alt,
+  .fa-shopping-cart {
+    margin-right: 6px;
+  }
+
+  /*HAMBURGUESA*/
+  .burger-menu {
+    display: none;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1280px) {
+  /* HEADER */
+  header {
+    background-color: #eac926;
+    margin: auto;
+  }
+  .logo-busqueda-box {
+    width: 125%;
+    justify-content: center;
+  }
+  .Logo-contenedor {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .LOGO {
+    width: 75%;
+    margin-top: 20px;
+    min-width: 135px;
+    margin-right: 25%;
+  }
+  .search {
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+    border-color: #c6c6c6;
+    height: 167%;
+  }
+
+  .boton-buscar {
+    width: 7%;
+    height: 165%;
+    border-radius: 0 5px 5px 0;
+  }
+  .buscador {
+    width: 65%;
+    margin-left: 0%;
+  }
+  .ico-y-cuotas {
+    width: 43%;
+    font-size: 0.9vw;
+  }
+
+  .ico-y-cuotas i {
+    font-size: 13px;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .contenedor-footer-ico i:hover {
+    color: #666;
+  }
+}
